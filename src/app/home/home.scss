@@ -1,0 +1,22 @@
+.home {
+  h1 {
+    color: #d26464;
+  }
+
+  .btn-upload {
+    background-color: #d96d6d;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .uploaded-files {
+    margin-top: 22px;
+    .lbl-no-files {
+      color: #5f0101;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<div class="home">
+    <h1>Text Files Storage</h1>
+
+    <button ui-sref="uploadPage" class="btn-upload">Upload</button>
+
+    <div class="uploaded-files">
+        <div class="lbl-no-files" ng-show="!vm.uploadedFiles.length">
+            No files uploaded yet!
+        </div>
+
+        <table ng-show="vm.uploadedFiles.length">
+            <thead>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Uploaded date</th>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="file in vm.uploadedFiles">
+                    <td>{{::file.fileName}}</td>
+                    <td>{{::file.size}} b</td>
+                    <td>{{::file.date | date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

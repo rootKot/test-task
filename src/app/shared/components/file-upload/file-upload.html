@@ -1,0 +1,18 @@
+<div class="file-upload">
+
+    <div class="box" ng-click="vm.browseFile()">
+        <div class="placeholder">
+            {{vm.file ? vm.file.name: 'Drag and drop here!'}}</div>
+    </div>
+
+    <div class="file-size-error" ng-show="vm.fileSizeError">
+        File size should be less than 10 mb!
+    </div>
+
+    <input id="hiddenInput"
+           type="file"
+           class="hidden-input"
+           accept=".txt"
+           on-file-select="vm.selectFile"
+    >
+</div>

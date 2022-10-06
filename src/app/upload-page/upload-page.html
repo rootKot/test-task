@@ -1,0 +1,17 @@
+<a ui-sref="home">Uploaded files</a>
+
+<div class="upload-page">
+    <div class=""></div>
+    <h1 class="title">Upload your file</h1>
+
+    <file-upload></file-upload>
+
+    <div ng-show="vm.isLoading">
+        Loading...
+    </div>
+
+    <div    class="file-content"
+            ng-show="vm.fileContent"
+            ng-bind-html="vm.fileContent"
+    ></div>
+</div>
